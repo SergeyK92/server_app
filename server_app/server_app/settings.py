@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-5i9u*_d1f%gkcxil+a^vx$0^=#$-wqy3=^ruj)jc=m1qpsxtry
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -78,7 +78,7 @@ DATABASES = {
         'NAME': 'user_orders_db',
         'USER': 'admin_db',
         'PASSWORD': 'qwER!234',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
