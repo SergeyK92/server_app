@@ -6,6 +6,7 @@ from users.models import User
 class Order(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
+    order_dt = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
